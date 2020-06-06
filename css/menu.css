@@ -1,0 +1,108 @@
+header {
+  background: white;
+  height: 50px;
+  z-index: 100;
+}
+#menu-bar {
+  display: none;
+}
+#logo {
+  padding: 10px;
+  float: left;
+}
+
+#barras {
+  float: right;
+  font-size: 20px;
+  margin: 13px;
+  cursor: pointer;
+}
+#X {
+  float: right;
+  font-size: 23px;
+  margin-top: 12px;
+  padding-left: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+
+header .contenedor .menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 236);
+  transition: all 0.5s;
+  transform: translateX(-100%);
+  z-index: 99;
+}
+header .contenedor .menu a {
+  display: block;
+  color: #fff;
+  height: 50px;
+  text-decoration: none;
+  padding: 15px;
+  font-family: 'IBM Plex Mono';
+}
+
+/* header .contenedor .menu a:hover {
+  color: #fff;
+  background: rgba(0, 243, 187);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+} */
+
+#menu-bar:checked ~ .menu {
+  transform: translateX(0%);
+}
+
+#menu-bar:checked ~ #barras {
+  color: #fff;
+}
+#menu-bar:checked ~ #X {
+  transform: translateX(100%);
+  color: #000;
+}
+
+@media (min-width: 600px) {
+  header .contenedor .menu {
+    width: 100%;
+  }
+  header .contenedor .menu a {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  #barras {
+    display: none;
+  }
+  #X {
+    display: none;
+  }
+  header .contenedor .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: translateX(0%);
+    float: right;
+    display: flex;
+    padding-right: 47px;
+    background: #fff;
+  }
+  header .contenedor .menu a {
+    display: inline-block;
+    color: #000;
+    height: 50px;
+    text-decoration: none;
+    padding: 24px 15px;
+    font-size: 16px;
+  }
+  #logo {
+    padding: 22px 64px;
+    float: left;
+  }
+  header .contenedor .menu a:hover {
+    color: rgba(0, 243, 187);
+    background: #fff;
+    text-decoration: line-through;
+  }
+}

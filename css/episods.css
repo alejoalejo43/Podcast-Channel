@@ -1,0 +1,47 @@
+#episods {
+  margin-top: 0vw;
+  background: #0000fe;
+  width: 100%;
+  padding-bottom: 150px;
+  clip-path: polygon(0 10vw, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  z-index: 50;
+}
+#titulo {
+  margin-left: 16px;
+  padding-top: 64px;
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+}
+#contenido {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video {
+  margin-top: 10px;
+  width: 89vw;
+  flex-wrap: wrap;
+  border-radius: 8px;
+}
+@media (min-width: 600px) {
+  #titulo {
+    margin-left: 11vw;
+    padding-top: 30vh;
+  }
+
+  .video {
+    margin: 2.8vw;
+    width: 41vw;
+  }
+}
+@media (min-width: 1024px) {
+  #titulo {
+    font-size: 48px;
+  }
+  #contenido {
+    margin-top: 0px;
+  }
+}

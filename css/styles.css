@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500|IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+@import url(menu.css);
+@import url(banner.css);
+@import url(episods.css);
+@import url(deDondeVenimos.css);
+@import url(invitadas.css);
+@import url(temas.css);
+@import url(novedades.css);
+@import url(footer.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 98%;
+  margin: auto;
+}
+@media (min-width: 1024) {
+  .contenedor {
+    width: 900px;
+  }
+}

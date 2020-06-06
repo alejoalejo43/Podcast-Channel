@@ -1,0 +1,52 @@
+#invitadas {
+  width: 100%;
+  margin-top: 60px;
+}
+#subtitulo2 {
+  position: absolute;
+  margin-left: 16px;
+  color: #060a24;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+}
+#invitadas .contenedor {
+  width: 100%;
+  padding-top: 110px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#invitadas .contenedor img {
+  width: 360px;
+  flex-wrap: wrap;
+}
+@media (min-width: 600px) {
+  #invitadas {
+    width: 100%;
+    margin-top: -80px; /*para solucionar la altura del content anterior toco subir esta*/
+  }
+  #subtitulo2 {
+    margin-left: 13vw;
+    font-size: 25px;
+  }
+  #invitadas .contenedor {
+    padding-top: 55px;
+  }
+  #invitadas .contenedor img {
+    width: 50vw;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024px) {
+  #subtitulo2 {
+    font-size: 48px;
+  }
+  #invitadas .contenedor img {
+    width: 33.33%;
+    height: 9.3%;
+    flex-wrap: wrap;
+  }
+  #invitadas .contenedor {
+    padding-top: 100px;
+  }
+}

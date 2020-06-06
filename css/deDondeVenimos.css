@@ -1,0 +1,82 @@
+#deDondeVenimos .contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#joseph {
+  transform: translateY(-100px);
+  width: 360px;
+  z-index: 80;
+  flex-wrap: wrap;
+}
+#deDondeVenimos .contenedor .content {
+  margin-top: -105px;
+  /* background: green; */ /*no cuadra el height de content es muy alto pero no se porque*/
+  flex-wrap: wrap;
+}
+
+#subtitulo {
+  padding-top: 27px;
+  margin-left: 16px;
+  color: #060a24;
+  width: 200px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+}
+#our {
+  margin-top: 8px;
+  margin-left: 16px;
+  width: 90%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  text-align: justify;
+}
+
+@media (min-width: 600px) {
+  #joseph {
+    transform: translateY(-140px);
+    width: 30vw;
+    margin-left: 10vw;
+  }
+  #deDondeVenimos .contenedor .content {
+    margin-top: -50px;
+    flex-wrap: wrap;
+    width: 40vw;
+  }
+  #our {
+    margin-top: 2vw;
+    margin-left: 2vw;
+    width: 80%;
+    font-size: 8px;
+  }
+  #subtitulo {
+    padding-top: 23px;
+    margin-left: 2vw;
+    color: #060a24;
+    width: 80%;
+    font-size: 24px;
+  }
+  #deDondeVenimos .contenedor {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #joseph {
+    transform: translateY(-180px);
+    margin-left: 0vw;
+  }
+  #deDondeVenimos .contenedor .content {
+    margin-top: -10px;
+    width: 40vw;
+    margin-left: 100px;
+  }
+  #subtitulo {
+    font-size: 48px;
+    margin-left: 25px;
+  }
+  #our {
+    font-size: 16px;
+    width: 85%;
+  }
+}

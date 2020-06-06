@@ -1,0 +1,87 @@
+#banner {
+  position: relative;
+  background: white;
+  z-index: 80;
+  margin-bottom: 20px;
+}
+#banner .contenedor {
+  padding: 20px;
+}
+h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  width: 250px;
+}
+h1 span {
+  text-decoration: line-through;
+}
+main #banner .contenedor p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  text-align: justify;
+}
+main #banner .contenedor p .text {
+  display: none;
+}
+main #banner .contenedor a {
+  display: block;
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 243, 187);
+  padding: 15px;
+  margin-top: 30px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+main #banner .contenedor a:hover {
+  background-color: #00f0b8;
+  color: #fff;
+  background-image: linear-gradient(to right, #00f0b8, #0000fe);
+}
+@media (min-width: 600px) {
+  #banner .contenedor {
+    padding: 20px;
+    width: 80%;
+  }
+  h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  main #banner .contenedor p {
+    width: 60%;
+    text-align: justify;
+  }
+
+  main #banner .contenedor a {
+    width: 30%;
+    padding: 15px;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    margin-top: 120px;
+    width: 90%;
+  }
+  main #banner .contenedor p {
+    width: 60%;
+    text-align: justify;
+    font-size: 16px;
+  }
+  main #banner .contenedor a {
+    margin-top: 60px;
+    width: 25%;
+    font-size: 18px;
+  }
+  main #banner .contenedor p .text {
+    display: inline;
+  }
+}
